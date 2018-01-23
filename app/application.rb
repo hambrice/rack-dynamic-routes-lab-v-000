@@ -2,7 +2,7 @@ require 'pry'
 
 class Application
 
-@@items = []
+@@items = [Item.new("apple", 8), Item.new("cheese", 4)]
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
